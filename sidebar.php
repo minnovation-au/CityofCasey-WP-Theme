@@ -1,5 +1,6 @@
 <?php
 /**
+ *Theme Name: City of Casey
  * The template for the sidebar containing the main widget area
  *
  * @package WordPress
