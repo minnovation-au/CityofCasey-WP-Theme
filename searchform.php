@@ -1,5 +1,6 @@
 <?php
 /**
+ * Theme Name: City of Casey
  * Template for displaying search forms in Twenty Sixteen
  *
  * @package WordPress
