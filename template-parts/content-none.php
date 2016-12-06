@@ -1,5 +1,6 @@
 <?php
 /**
+ * Theme Name: City of Casey
  * The template part for displaying a message that posts cannot be found
  *
  * @package WordPress
