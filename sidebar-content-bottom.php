@@ -1,5 +1,6 @@
 <?php
 /**
+ * Theme Name: City of Casey
  * The template for the content bottom widget areas on posts and pages
  *
  * @package WordPress
