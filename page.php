@@ -1,5 +1,6 @@
 <?php
 /**
+ * Theme Name: City of Casey
  * The template for displaying pages
  *
  * This is the template that displays all pages by default.
