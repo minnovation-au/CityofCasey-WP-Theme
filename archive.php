@@ -1,6 +1,7 @@
 <?php 
 	
 /**
+Theme Name: City of Casey
 
 The template for showing archive pages for City of Casey.
 
