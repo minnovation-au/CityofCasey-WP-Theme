@@ -1,0 +1,208 @@
+/*
+Theme Name: CI_theme
+Author: City of Casey
+Description: Theme for the Conflict of Interest portal
+Version: 0.0.1
+Tags: CI_portal
+*/
+
+
+
+@charset "utf-8";
+/* Mobile CSS Document */
+
+@media (max-width: 980px){
+	/* THEME ELEMENTS */
+	#header .content {width: 100%; padding: 0px 20px; box-sizing: border-box;}
+
+	.menu-navigation-container {display: block; float: left; width: 100%; height: 55px; margin: 0px;}
+	.menu-item {width: 12.5%; box-sizing: border-box;}
+	.menu-item a {width: 100%; height: 100%; box-sizing: border-box; font-size: 12px; padding: 11px 15px;}
+	
+	#main {box-sizing: border-box; padding: 0px 20px;}
+	#content {position: static; width: 100%; left: initial; margin: 35px 0px 25px 0px; box-sizing: border-box;}
+	#content h1 {padding: 20px 0px 0px 0px;}
+	
+	#footer .content {float: left; width: 100%; padding: 0px 20px; box-sizing: border-box;}
+	.footer-leftside {width: 50%;}
+	.footer-rightside {width: 50%; box-sizing: border-box;}
+	.footer-leftside .flogos {width: 100%;}	
+	.footer-leftside .links {width: 100%;}
+	
+	/* GRAVITY FORMS */
+	
+	/* structural elements */
+	body .gform_wrapper .gform_body {width: 100%; min-height: auto;}
+	body .gform_wrapper .gform_body .gform_page {width: 100%; padding-right: 0px; border-right: none; min-height: auto;}
+	
+	/* progress steps */
+	body .gform_wrapper .gf_page_steps {float: left; width: 100%; margin: 0px 0px 10px 0px !important; padding-bottom: 5px !important; min-width: 100%; max-width: 100%; height: auto; border-bottom: solid 1px #94bcd4 !important;}
+	body .gform_wrapper .gf_page_step {width: auto; border-bottom: none;}
+	
+	body .gform_wrapper .gf_step{width: auto; height: 36px; margin: 0px;}
+	body .gform_wrapper .gf_step span.gf_step_number{margin: 8px 10px 0px 0px;}
+	body .gform_wrapper .gf_step_active .gf_step_label {display: block;}
+	body .gform_wrapper .gf_step_label{display: none; width: auto; border-bottom: none; padding: 9px 10px 0px 0px;}
+	body .gform_wrapper .gf_step_completed .gf_step_label {display: none;}
+	body .gform_wrapper .gf_step span.gf_step_number_active{margin: 5px 7px 0px 0px;}
+	body .gform_wrapper .gf_step span.gf_step_number_completed{margin: 5px 6px 0px 0px;}
+	body .gform_wrapper .gf_step_completed{background: none;}
+	body .gform_wrapper .gf_step_clear{clear: none;}
+	
+	/* validation error */
+	body .gform_wrapper div.validation_error {width: 100% !important; border-right: none;}
+	
+	/* notifications */
+	body .gform_wrapper li.notification .text {float: none; display: block; width: auto; margin: 20px 20px 0px 0px;}
+	body .gform_wrapper li.notification .text p {width: auto;}
+	body .gform_wrapper li.notification .text ul {width: auto; margin-left: 1em !important;}
+	body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul {width: auto; margin-left: 1em !important;}
+	
+	/* Disabled Parking Permit */
+	.gform_confirmation_message .parkingPermit .info {width: 70%;}
+	
+	/* jQuery UI Autocomplete */
+	body .gform_wrapper form .gform_page_fields ul li .ui-autocomplete {left: 40% !important;}
+}
+/* Mobile - portrait */
+@media (max-width: 800px){
+	/* THEME ELEMENTS */
+	body {background: #ffffff;}
+	
+	#header {height: auto;}
+	#header .content {height: auto; background: none; padding: 0px;}
+	#header .content .main {display: block; width: 100%; height: 60px; background: url('images/headerWatermark.png') top no-repeat; background-size: 265px 80px;}
+	
+	#header #hamburgerMenu {display: block; float: left; width: 30%; margin: 0px; height: 60px;}
+	#header #hamburgerMenu a {display: block; cursor: pointer; margin: 7px; width: 46px; height: 46px; background: rgba(0,0,0,0.3); border-radius: 23px;}
+	#header #hamburgerMenu a img {float: left; margin: 15px 0px 0px 11px; width: 23px; height: auto; border: none;}
+	#header #hamburgerMenu a:hover {background: rgba(0,0,0,0.7);}
+	
+	#header #logo {width: 40%; height: 60px; margin: 0px; clear: none;}
+	#header #logo img {margin: 7px auto 0px auto; height: 46px;}
+	
+	#header #options {width: 30%; margin: 0px; font-size: 0em !important;}
+	#header #options span {display: none;}
+	#header #options a {display: inline-block; margin: 7px 7px 0px 0px; cursor: pointer; width: 46px; height: 46px; background: rgba(0,0,0,0.3); border-radius: 23px;}
+	#header #options a img {display: block;}
+	#header .decreaseFontSize img {width: 26px; height: auto; margin: 11px 0px 0px 11px;}
+	#header .increaseFontSize img {width: 31px; height: auto; margin: 11px 0px 0px 9px;}
+	
+	.menu-navigation-container {display: none; width: 100%; height: auto; margin: 0px; text-align: left; border-bottom: none;}
+	#menu-navigation {width: 100%; height: auto;}
+	.menu-item {width: 100%; height: 41px; font-size: 12px; border-right: none; border-bottom: solid 1px #808d98;}
+	.menu-item a {width: 100%; height: 40px; padding: 0px; text-indent: 20px; line-height: 40px; border-bottom: none !important;}
+	#menu-navigation li.last {height: 40px;}
+	
+	.menu-item .council {border-left: 10px solid #ab3a1c;}
+	.menu-item .community {border-left: 10px solid #2a79aa;}
+	.menu-item .business {border-left: 10px solid #00737a;}
+	.menu-item .building {border-left: 10px solid #b35917;}
+	.menu-item .roads {border-left: 10px solid #83356c;}
+	.menu-item .environment {border-left: 10px solid #5d801a;}
+	.menu-item .health {border-left: 10px solid #866d07;}
+	.menu-item .arts {border-left: 10px solid #065e7e;}
+	
+	#main {padding: 0px;}
+	#content {margin: 0px auto; border-radius: 0px; padding: 0px 20px;}
+	#content h1 {padding: 20px 0px 0px 0px;}
+	
+	#footer .content {height: auto;}
+	.footer-leftside {float: right; margin: 20px 0px; width: 100%; height: auto;}
+	.footer-rightside {float: left; clear: both; margin: 20px 0px 0px 0px; width: 100%; height: auto;}
+	.footer-rightside .logo {float: none; display: block; height: 106px; margin: 0px auto;}
+	.footer-rightside p {float: none; text-align: center; height: auto;}
+	.footer-leftside .flogos {width: 100%; height: 55px; margin-bottom: 20px;}
+	.tislogo {float: none; margin: 0px 15px 0px 0px;}
+	.nrslogo {float: none; margin: 5px 0 0 0;}
+	.footer-leftside .links {width: 100%; height: auto; text-align: center;}
+	
+	/* GRAVITY FORMS */
+	
+	/* footer and buttons */
+	body .gform_wrapper .gform_body .gform_page_footer .gform_next_button, body .gform_wrapper .gform_body .gform_page_footer .gform_next_button:hover,
+	body .gform_wrapper .gform_body .gform_page_footer .gform_button, body .gform_wrapper .gform_body .gform_page_footer .gform_button:hover,
+	body .gform_wrapper .gform_body .gform_page_footer .gform_previous_button, body .gform_wrapper .gform_body .gform_page_footer .gform_previous_button:hover {width: 120px; min-width: 120px;}
+	body .gform_wrapper .gform_body .gform_page_footer .gform_next_button, body .gform_wrapper .gform_body .gform_page_footer .gform_button, body .gform_wrapper .gform_body .gform_page_footer .gform_previous_button {margin-left: 0px !important; margin-right: 0px !important;}
+}
+@media (min-width: 801px){
+	.menu-navigation-container {display: block !important;}	
+}
+/*
+@media (max-width: 705px){
+	 jQuery UI Autocomplete 
+	.ui-autocomplete {left: 130px !important;}
+}
+*/
+@media (max-width: 700px){
+	/* GRAVITY FORMS */
+	
+	/* field elements */	
+	body .gform_wrapper ul li.left {width: 100% !important;}
+	body .gform_wrapper ul li.right {width: 100% !important;}
+	body .gform_wrapper ul li.left div.ginput_container, body .gform_wrapper ul li.right div.ginput_container {width: 78.6%;}
+	
+	/* labels */
+	body .gform_wrapper ul li.left .gfield_label, body .gform_wrapper ul li.right .gfield_label {width: 20% !important;}
+	body .gform_wrapper ul li.right .gfield_label {padding-left: 0px !important;}
+	
+	/* text fields */
+	.gform_wrapper .left input.small, .gform_wrapper .left select.small, .gform_wrapper .right input.small, .gform_wrapper .right select.small {width: 33% !important;}
+	.gform_wrapper .wide input.small, .gform_wrapper .wide select.small {width: 20% !important;}
+	.gform_wrapper input.medium, .gform_wrapper select.medium {width: 66% !important;}
+	
+	/* Disabled Parking Permit */
+	.gform_confirmation_message .parkingPermit .info {width: 60%;}
+	
+	/* jQuery UI Autocomplete */
+	body .gform_wrapper form .gform_page_fields ul li .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.left .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.right .ui-autocomplete {left: 130px !important; width: 78.6% !important;}
+}
+@media (max-width: 455px){
+	/* field elements */
+	body .gform_wrapper ul li div.ginput_container_fileupload {width: 100% !important;}
+	
+	/* text fields */
+	.gform_wrapper .left input.small, .gform_wrapper .left select.small, .gform_wrapper .right input.small, .gform_wrapper .right select.small {width: 50% !important;}
+	.gform_wrapper .wide input.small, .gform_wrapper .wide select.small {width: 33% !important;}
+	.gform_wrapper input.medium, .gform_wrapper select.medium {width: 100% !important;}
+	.gform_wrapper input.datepicker {width: 86% !important;}
+}
+@media (max-width: 665px){
+	body .gform_wrapper ul li div.ginput_container, body .gform_wrapper ul li.left div.ginput_container, body .gform_wrapper ul li.right div.ginput_container, body .gform_wrapper form .gform_page_fields ul li .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.left .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.right .ui-autocomplete {width: 75% !important;}
+	body .gform_wrapper ul li.noLabel div.ginput_container {width: 100% !important;}
+}
+@media (max-width: 580px){
+	body .gform_wrapper ul li div.ginput_container, body .gform_wrapper ul li.left div.ginput_container, body .gform_wrapper ul li.right div.ginput_container, body .gform_wrapper form .gform_page_fields ul li .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.left .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.right .ui-autocomplete {width: 70% !important;}
+	/* notifications */
+	body .gform_wrapper li.notification .text {float: left; width: 60%; margin-top: 0px; font-size: 13px;}
+	
+	/* Disabled Parking Permit */
+	.gform_confirmation_message .parkingPermit img {float: none; margin: 0px auto;}
+	.gform_confirmation_message .parkingPermit .info {width: 100%; margin-top: 20px;}
+}
+@media (max-width: 490px){
+	body .gform_wrapper ul li div.ginput_container, body .gform_wrapper ul li.left div.ginput_container, body .gform_wrapper ul li.right div.ginput_container, body .gform_wrapper form .gform_page_fields ul li .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.left .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.right .ui-autocomplete {width: 65% !important;}
+	/* notifications */
+	body .gform_wrapper li.notification .icon {float: none; margin: 5px auto;}
+	body .gform_wrapper li.notification .text {margin: 0px 20px 0px 20px; width: auto !important; text-align: center;}
+	body .gform_wrapper li.notification .text ul {text-align: left;}
+}
+@media (max-width: 430px){
+	body .gform_wrapper ul li div.ginput_container, body .gform_wrapper ul li.left div.ginput_container, body .gform_wrapper ul li.right div.ginput_container, body .gform_wrapper form .gform_page_fields ul li .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.left .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.right .ui-autocomplete {width: 60% !important;}
+	/* Disabled Parking Permit */
+	.gform_confirmation_message .parkingPermit .info .left, .gform_confirmation_message .parkingPermit .info .right {width: 100%; margin: 0px;}
+	#header #options {display: none;}
+}
+@media (max-width: 385px){
+	body .gform_wrapper ul li div.ginput_container, body .gform_wrapper ul li.left div.ginput_container, body .gform_wrapper ul li.right div.ginput_container, body .gform_wrapper form .gform_page_fields ul li .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.left .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.right .ui-autocomplete {width: 55% !important;}
+}
+@media (max-width: 345px){
+	body .gform_wrapper ul li div.ginput_container, body .gform_wrapper ul li.left div.ginput_container, body .gform_wrapper ul li.right div.ginput_container, body .gform_wrapper form .gform_page_fields ul li .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.left .ui-autocomplete, body .gform_wrapper form .gform_page_fields ul li.right .ui-autocomplete {width: 50% !important;}
+	.gform_wrapper input.datepicker {width: 84% !important;}
+}
+@media (max-width: 980px) and (min-width: 720px){
+	.gform_wrapper li.left div.gfield_description, .gform_wrapper li.right div.gfield_description {padding-left: 40% !important;}
+	.gform_wrapper li .gfield div.gfield_description {padding-left: 20% !important;}
+	.gform_wrapper li.wide div.gfield_description, .gform_wrapper li.noLabel div.gfield_description {padding-left: 0px !important;}
+	.gform_wrapper li.noLabel div.gfield_description {padding-left: 0px !important;}
+}
