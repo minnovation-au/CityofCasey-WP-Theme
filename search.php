@@ -1,5 +1,6 @@
 <?php
 /**
+ * Theme Name: City of Casey
  * The template for displaying search results pages
  *
  * @package WordPress
