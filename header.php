@@ -1,5 +1,6 @@
 <?php
 /**
+Theme Name: City of Casey
 
 The template for displaying all Header info for City of Casey.
 
