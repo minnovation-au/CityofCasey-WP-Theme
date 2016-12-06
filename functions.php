@@ -1,7 +1,6 @@
 <?php
 /**
  * Theme Name: City of Casey
- 
  * Twenty Sixteen functions and definitions
  *
  * Set up the theme and provides some helper functions, which are used in the
