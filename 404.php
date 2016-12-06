@@ -1,6 +1,7 @@
 <?php 
 	
 /**
+Theme Name: City of Casey
 
 The template for City of Casey.
 
